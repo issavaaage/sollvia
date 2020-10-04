@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/sollvia/static/css/main.b2faf055.chunk.css",
+    "main.js": "/sollvia/static/js/main.25eb492d.chunk.js",
+    "main.js.map": "/sollvia/static/js/main.25eb492d.chunk.js.map",
+    "runtime-main.js": "/sollvia/static/js/runtime-main.3ba40e18.js",
+    "runtime-main.js.map": "/sollvia/static/js/runtime-main.3ba40e18.js.map",
+    "static/css/2.34c0de18.chunk.css": "/sollvia/static/css/2.34c0de18.chunk.css",
+    "static/js/2.f6b8a934.chunk.js": "/sollvia/static/js/2.f6b8a934.chunk.js",
+    "static/js/2.f6b8a934.chunk.js.map": "/sollvia/static/js/2.f6b8a934.chunk.js.map",
+    "index.html": "/sollvia/index.html",
+    "precache-manifest.d1eda3ae9fc2a4e7059876e937edb6a6.js": "/sollvia/precache-manifest.d1eda3ae9fc2a4e7059876e937edb6a6.js",
+    "service-worker.js": "/sollvia/service-worker.js",
+    "static/css/2.34c0de18.chunk.css.map": "/sollvia/static/css/2.34c0de18.chunk.css.map",
+    "static/css/main.b2faf055.chunk.css.map": "/sollvia/static/css/main.b2faf055.chunk.css.map",
+    "static/js/2.f6b8a934.chunk.js.LICENSE.txt": "/sollvia/static/js/2.f6b8a934.chunk.js.LICENSE.txt",
+    "static/media/styles.min.scss": "/sollvia/static/media/background_home.1d0b4f98.png",
+    "static/media/bob.png": "/sollvia/static/media/bob.eacc4b2b.png",
+    "static/media/logo.svg": "/sollvia/static/media/logo.5dae9692.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3ba40e18.js",
+    "static/css/2.34c0de18.chunk.css",
+    "static/js/2.f6b8a934.chunk.js",
+    "static/css/main.b2faf055.chunk.css",
+    "static/js/main.25eb492d.chunk.js"
+  ]
+}
