@@ -1,0 +1,393 @@
+@import 'reset.scss';
+@import 'smart-grid.scss';
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Gilroy/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/Gilroy/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Gilroy/Gilroy-Bold.ttf);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: "Gilroy";
+  font-size: 13px;
+  font-weight: 400;
+}
+
+$background: #F2F2F2;
+$elem: #FEFEFE;
+$nav_link: #5B5B5B;
+$font_black: #333333;
+$links_blue: #2B2E83;
+
+.wrapper {
+  @include wrapper();
+}
+
+.header-content {
+  background-color: #fff;
+  @include row-flex();
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include md(padding-top, 15px);
+  @include md(padding-bottom, 15px);
+
+  &--popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150%;
+    width: 100vw;
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-direction: column;
+  }
+
+  &__logo {
+    @include col();
+    margin-right: 40px;
+    @include md(margin-bottom, 0px);
+    @include md(max-width, 220px);
+    @include sm(max-width, 180px);
+    @media (max-width: 1240px) {
+      flex-grow: 1;
+    }
+
+    //popup styles
+    //@include sm(display, none);
+    //popup styles
+  }
+
+  &__nav {
+    @include col();
+    flex-grow: 1;
+
+    //popup styles
+    //@include size-sm(12);
+    //@include sm(display, flex);
+    //@include sm(flex-direction, column);
+    //@include sm(flex-grow, 0);
+    //popup styles
+    
+
+    ul {
+      display: flex;
+      @media (max-width: 1240px) {
+        display: none;
+      }
+
+      //@include lg(justify-content, center);
+
+      //popup styles
+      //@include sm(flex-direction, column);
+      //@include sm(order, 1);
+      //@include sm(align-items, center);
+      //@include sm(padding, 30px 0px);
+      //@include sm(margin, 0px 15px);
+      //@include sm(border-bottom, 2px solid #F2F2F2);
+      //popup styles
+    
+
+      li {
+        margin-right: 45px;
+
+        @include lg(margin-right, 40px);
+
+        //popup styles
+        //@include sm(margin-right, 0);
+        //@include sm(margin-bottom, 30px);
+        //popup styles
+        
+
+        &:last-child{
+          margin-right: 0px;
+        }
+
+        a {
+          font-size: 1rem;
+          color: $nav_link;
+
+          &:after {
+            position: absolute;
+            bottom: -5px;
+            display: block;
+            left: 50%;
+            content: '';
+            height: 1px;
+            width: 0;
+            background-color: $links_blue;
+          } 
+        }
+
+        &:hover {
+
+          a {
+            position: relative;
+            color: $links_blue;
+
+            
+
+            &:after {
+              width: 100%;
+              transform: translateX(-50%);
+              transition: width .2s ease-out;
+            }
+          }
+        }
+      }
+    }
+
+    .hamburger-btn {
+      display: none;
+      height: 15px;
+      float: right;
+      width: 25px;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media (max-width: 1240px) {
+        display: flex;
+      }
+
+      //popup styles
+      //@include sm(align-self, flex-end);
+      //popup styles
+
+      &__row {
+        width: 100%;
+        height: 2px;
+        background-color: $links_blue;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  &__contacts {
+    @include col();
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width: 1240px) {
+      display: none;
+    }
+
+    //popup styles
+    //@include sm(display, block);
+    //@include sm(order, 4);
+    //@include sm(padding-top, 40px);
+    //popup styles
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 40px;
+
+      //popup styles
+      //@include sm(margin-right, 0px);
+      //@include sm(margin-bottom, 20px);
+      //@include sm(align-items, center);
+      //popup styles
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      p {
+        font-size: 1.125rem;
+        color: $font_black;
+        margin-bottom: 5px;
+      }
+
+      a {
+        font-size: 0.75rem;
+        color: $links_blue
+      }
+    }
+  }
+}
+
+
+.company {
+  background-image: url('../assets/img/background_home.png');
+  background-repeat: no-repeat;
+  background-size: 1570px;
+  height: 520px;
+  max-width: 1570px;
+  margin: 0 auto;
+
+  @include lg(height, 500px);
+  @include sm(height, 410px);
+
+  &-content {
+
+    &__text {
+      width: 100%;
+      text-align: center;
+      padding-top: 130px;
+      color: #FFEEFF;
+
+      @include sm(padding-top, 35px);
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        padding-bottom: 30px;
+
+        @include lg(font-size, 2.5rem);
+        @include lg(line-height, 2.5rem);
+        @include md(font-size, 2.2rem);
+        @include md(line-height, 2.2rem);
+        @include sm(font-size, 1.625rem);
+        @include sm(max-width, 320px);
+        @include sm(margin, 0 auto);
+      }
+
+      h2 {
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+        font-weight: 500;
+        max-width: 860px;
+        margin: 0 auto;
+
+        @include lg(font-size, 1.5rem);
+        @include lg(line-height, 2rem);
+        @include md(font-size, 1rem);
+        @include md(line-height, 1.4rem);
+        @include sm(max-width, 260px);
+      }
+    }
+  }
+}
+
+
+.cards {
+
+  &-content {
+    height: 370px;
+    @include col();
+
+    &__cards {
+      margin-top: -165px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include sm(justify-content, center);
+
+      .card {
+        //width: calc(16.6% - 14px);
+        margin: 7px;
+        @media (max-width: 451px) {
+          margin: 70px;
+        }
+        @media (max-width: 400px) {
+          margin: 50px;
+        }
+        @media (max-width: 340px) {
+          margin: 20px;
+        }
+        background-color: $elem;
+        border-radius: 4px;
+        box-shadow: 0px 5px 20px rgba(51, 51, 51, 0.15);
+
+        //@include lg(display, none);
+        //@include sm(width, calc(100% - 14px));
+
+        &:first-child {
+          //@include sm(display, block);
+        }
+
+        &__text {
+          padding: 25px 25px 0px 25px;
+          
+          h3 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #333333;
+            margin-bottom: 15px;
+
+            @include sm(font-size, 1.5rem);
+          }
+
+          p {
+            font-size: 1rem;
+            color: #828282;
+            line-height: 1.5rem;
+
+            @include sm(font-size, 0.875rem);
+          }
+        }
+
+        img {
+          display: block;
+          margin-left: auto;
+          max-height: 137px;
+        }
+      }
+    }
+  }
+}
+
+
+footer {
+  background-color: #202020;
+
+  .footer-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 1rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @include sm(flex-direction, column);
+    @include sm(align-items, center);
+    
+    p {
+      color: $elem;
+      margin-right: 10px;
+
+      @include sm(margin-right, 0);
+      @include sm(padding-bottom, 20px);
+    }
+
+    a {
+      color: $elem;
+      margin-right: 10px;
+
+      @include sm(margin-right, 0);
+      @include sm(padding-bottom, 20px);
+
+      &:last-child {
+        margin-right: 0;
+        @include sm(padding-bottom, 0px);
+      }
+    }
+  }
+}
