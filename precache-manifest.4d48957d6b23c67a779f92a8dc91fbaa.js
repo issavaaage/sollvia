@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "21855d834ae4357c3d5f4a288799483e",
+    "revision": "6ef593990b2f0ab6759267007b3588e5",
     "url": "/sollvia/index.html"
   },
   {
-    "revision": "e8a76edab028f74409df",
-    "url": "/sollvia/static/css/main.dce334d8.chunk.css"
+    "revision": "b3e195927ed8e70c5c45",
+    "url": "/sollvia/static/css/main.4826c9e7.chunk.css"
   },
   {
     "revision": "a425cd4709ea71d002d2",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sollvia/static/js/2.5af22925.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e8a76edab028f74409df",
+    "revision": "b3e195927ed8e70c5c45",
     "url": "/sollvia/static/js/main.b749952e.chunk.js"
   },
   {
