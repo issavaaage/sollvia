@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sollvia/precache-manifest.4d48957d6b23c67a779f92a8dc91fbaa.js"
+  "/sollvia/precache-manifest.e6b065673f59db62893907c349efccee.js"
 );
 
 self.addEventListener('message', (event) => {
